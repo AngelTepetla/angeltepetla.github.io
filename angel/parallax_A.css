@@ -1,0 +1,152 @@
+body, html {
+  height: 100%;
+}
+
+
+.parallas {
+    /* The image used */
+    background: url(0411.JPG);
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fill {
+  padding-right: 95px;
+  padding-top: 60px;
+}
+.paralls {
+    /* The image used */
+    background: url(fw.jpg);
+
+    /* Full height */
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallas22 {
+    /* The image used */
+    background: url(0411.JPG);
+
+    /* Full height */
+    height: 270px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallas2 {
+    /* The image used */
+    background: url(fw.jpg);
+
+    /* Full height */
+    height: 270px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.captin {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #222;
+}
+
+.captin span.bordr {
+  background-color: #f1f2f4;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 3px;
+  padding-left: 9px;
+  line-height: 1.4;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+.pafy {
+  padding-top: 50px;
+}
+.pamy {
+  margin-bottom: 100px;
+}
+.segundo {
+  color: #999;
+}
+.centro {
+  text-align: center;--> 
+}
+.fondux {
+  background-color: #f1f2f4;
+
+}
+.fonduxy {
+  text-shadow: 1px 1px 1 #f1f2f4;
+
+}
+.fr {
+  top: 80%;  
+}
+.espacio
+{
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.rosas{
+  color: #EA2E49;
+}
+.darks{
+  color: #e02d8d;
+}
+
+.primer {
+  color: #444;
+}
+.pall {
+background-image: url('http://onehdwallpaper.com/wp-content/uploads/2015/08/Sunflower-Full-HD-1080p-Wallpapers.jpg');
+height: 600px;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+    background-position: center;
+}
+.tr {
+background-color:transparent;font-size:25px;color: #f7f7f7;
+text-align: center;
+}
+.pal{
+background: url(panda.png);
+height: 400px;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+    background-position: center;
+}
+.pax{
+background: url(panda.png);
+height: 400px;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+}
+.px {
+color: #222;
+text-align: center;
+}

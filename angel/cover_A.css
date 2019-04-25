@@ -1,0 +1,469 @@
+/*
+ * Globals
+ */
+@import 'https://fonts.googleapis.com/css?family=Work+Sans';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.this{
+  background: #131724;
+  width: 100px;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.this:hover{
+  background: #1d88dc;
+  color: #fff;
+  font-size: 20px;
+}
+
+section#imagen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+
+  background-image: url(we8.jpg);
+  background-position: center 0px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+}
+.cover-container{
+  z-index: 0;
+}
+
+section#scroll{
+  margin: auto;
+  width: 200px;
+  height: 19vh;
+}
+
+
+svg#mySVG {
+  margin-top: 6vh;
+  position: relative;
+  text-align: center;
+  padding: auto;
+  background-color: white;
+  top: 15%;
+  width: 400px;
+  height: 220px;
+  margin-bottom: 30px;
+}
+
+/*
+svg#mySVG {
+  margin-top: 6vh;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: auto;
+  background-color: white;
+  top: 15%;
+  width: 400px;
+  height: 220px;
+  margin-bottom: 30px;
+}
+*/
+
+path#triangle{
+margin: auto;
+}
+
+
+p#titulo{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.5em;
+  color: #ffffff;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+p#menorque {
+  -webkit-transform: rotate(270deg);
+  text-align: center;
+  color: #fff;
+  font-size: 1.1em;
+}
+  .dark{
+    color: #ffffff;
+  }
+  .rosa{
+    color: #d80d54;
+  }
+
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 30px;
+}
+
+p#textus{
+  font-size: 1.1em;
+}
+
+a#white{
+  color: white;
+  font-size: 1em;
+}
+/*
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #555;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #00a587;
+  border: 1px solid #00a587;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+
+/* body {
+  height: 100%;
+  background-color: #222;
+
+  background: url(tr.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+} */
+body {
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 3px rgb(187, 191, 201);
+}
+
+.clnav {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgb(187, 191, 201);
+}
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+
+/* ANGEL TEPETLA */
+.colr {
+  color: #fff;
+}
+.center {
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+.d {
+  color: #fff;
+  background-color: #fff;
+}
+.rt3s2 {
+
+  animation-iteration-count: infinite;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  margin-top: 25px;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  border-bottom: 3px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #1d88dc;}
+
+  /* #a9a9a9 rosayoEA2E49 rosa2 df278d */
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #1d88dc;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #333; /* IE8 proofing */
+  margin-top: 50px;
+  font-size: 1em;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: absolute;
+    top: 0;
+  }
+  .mastfoot {
+    position: relative;
+    bottom: 0;
+    top: 40px;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  section#body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+  section#seccion{
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  background-color: white;
+}
+
+
+}
+
+
+@media (min-width: 992px) {
+  .masthead,
+  .cover-container {
+    width: 1000px;
+  }
+
+  section#body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+
+  /*
+
+   .mastfoot {
+    position: relative;
+    bottom: 0;
+    top: 40px;
+  }
+*/
+
+}
+
+
+@media (max-width: 767px) {
+  .masthead,
+
+
+  section#body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin: auto;
+}
+  section#seccion{
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  background-color: white;
+}
+
+/* ANGEL TEPETLA */
+.colr {
+  color: #333;
+}
+.center {
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+.d {
+  color: #333;
+  background-color: #333;
+}
+.rt3s2 {
+
+  animation-iteration-count: infinite;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  margin-top: 25px;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* IE8 proofing */
+  border-bottom: 3px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #00a587;}
+
+  /* #a9a9a9 rosayoEA2E49 rosa2 df278d */
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #333;
+  border-bottom-color: #00a587;
+}
+
+body {
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 3px rgb(187, 191, 201);
+}
+
+.clnav {
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 3px rgb(187, 191, 201);
+}
+
+
+  /*
+
+   .mastfoot {
+    position: relative;
+    bottom: 0;
+    top: 40px;
+  }
+*/
+
+}

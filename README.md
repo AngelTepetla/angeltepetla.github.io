@@ -1,2 +1,0 @@
-# devOne
-Portafolio personal

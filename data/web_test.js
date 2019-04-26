@@ -19,11 +19,9 @@ const {value: ipAddress} = await swal({
 })
 */
 
-	if(ipAddress){}
 
-	else{
 		ipAddress = "entusiasta";
-	}
+
 //alert("hola" + " " + ipAddress);
 		var my_cliente = document.getElementById("cliente");
 		var mouse1 = document.getElementById("mouse_1");

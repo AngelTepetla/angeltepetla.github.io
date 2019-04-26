@@ -29,11 +29,20 @@
 
 
     */
+
+    background-color: #1f87dc;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: #1f87dc;
+    color: #fff;
+    /*
     color: #131724;
     border-width: 5px 5px 5px 5px;
     border-style: solid;
     background-color: #fff;
     border-color: #fff;
+
+    */
 }
 
 

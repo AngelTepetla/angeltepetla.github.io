@@ -8,7 +8,7 @@ const inputValue = fetch(ipAPI)
   .then(data => data.ip)
 */
 
-
+/*
 const {value: ipAddress} = await swal({
   title: 'Ingresa tu nombre:',
   input: 'text',
@@ -17,7 +17,7 @@ const {value: ipAddress} = await swal({
     return !value && '¡Intentalo de nuevo!'
   }
 })
-
+*/
 
 	if(ipAddress){}
 

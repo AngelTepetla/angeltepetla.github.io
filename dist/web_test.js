@@ -5,6 +5,7 @@ const inputValue = fetch(ipAPI)
   .then(response => response.json())
   .then(data => data.ip)
 
+/*
 const {value: ipAddress} = await swal({
   title: 'Ingresa tu nombre:',
   input: 'text',
@@ -14,10 +15,10 @@ const {value: ipAddress} = await swal({
     return !value && '¡Intentalo de nuevo!'
   }
 })
-
+*/
 
 	if(ipAddress){}
-	
+
 	else{
 		ipAddress = "entusiasta";
 	}
@@ -30,7 +31,7 @@ const {value: ipAddress} = await swal({
 
 		mouse1.innerHTML = "¡" + ipAddress + " mueve el mouse sobre la imagen y el texto!";
 		mouse2.innerHTML = "¡" + ipAddress + " mueve el mouse sobre la imagen y el texto!";
-	
+
 
 
 

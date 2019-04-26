@@ -76,5 +76,62 @@
     right: 0;
     bottom: 0;
     /* vertical-align: middle; */
-    /*height: 200px;/*
+    /*height: 200px;*/
 }
+
+.div_cambia{
+    width: 100vw;
+    margin: auto;
+    height: 80px;
+    position: relative;
+}
+
+.divSec3{
+    margin: auto;
+    height: 40px;
+    position: relative;
+}
+
+.cambiaSec3{
+    /*position: absolute;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    */
+    margin: auto;
+    text-align: center;
+
+
+
+    position: absolute;
+    height: 30px;
+    width: 88%;
+    /* display: flex; */
+    font-size: 1.9em;
+    color: #131724;
+}
+
+.cambia{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100vw;
+    /* display: flex; */
+
+    font-size: 1.9em;
+    color: #fff;
+}
+
+#tepetla{
+    z-index: 1;
+}
+
+#inactivo_1{
+    z-index: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+}
+

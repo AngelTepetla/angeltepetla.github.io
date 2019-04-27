@@ -1,5 +1,5 @@
 new fullpage('#fullpage', {
-  sectionsColor: ['#141414', '#1a1a1a', '#1d88dc', '#fff', '#141414'],
+  sectionsColor: ['#141414', '#1a1a1a', '#fff', '#fff', '#1d88dc', '#141414'],
 });
 
 

@@ -6,7 +6,7 @@ $(document).ready(
 	document.getElementById("botonAdd").onclick = function() { adder(); };
 
 
-	var lockers = ['Ángel Tepetla', 'Clau Salamanca', 'Caw Salamanca', 'José Ángel', 'Mi niña fea <3', 'La fea Caw', 'devOne', 'Yosafat :v', 'Ojitos', 'Bambina', 'Mi amor Caw', '¡Te amo!'];
+	var lockers = ['Ángel Tepetla', 'Clau Salamanca', 'Caw Salamanca', 'José Ángel', 'Mi niña fea <3', 'La fea Caw', 'devOne', 'Yosafat :v', 'Ojitos', 'Bambina', 'Mi Caw', '¡Te amo!'];
 	//var lockers = ['A', 'B', 'C', 'D', 'E'];
 	var fijo = 'Ángel Tepetla', fijo2 = 'Caw Salamanca';
 

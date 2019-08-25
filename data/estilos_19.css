@@ -1196,6 +1196,8 @@ rojo flat dark c6002b
 
 	}
 
+
+
 	.spann_light{
 
 		font-family: "HelveticaNeue", Arial;
@@ -1207,6 +1209,12 @@ rojo flat dark c6002b
 		border-width: 5px 5px 5px 5px;
 		font-weight: 500;
 
+	}
+
+	span#tipo_yo{
+		font-weight: bold;
+		background-color: #1d87dc;
+		padding: : 0px 3px;
 	}
 
 	.main_p{

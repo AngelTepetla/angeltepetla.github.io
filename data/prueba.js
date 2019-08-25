@@ -54,6 +54,68 @@ function color(hsv){
 
 
 
+
+
+
+
+
+
+
+
+var triangle = document.getElementById("triangle");
+var incColor = 0;
+
+// Get the id of the <path> element and the length of <path>
+var length = triangle.getTotalLength() * 1;
+console.log(length);
+
+// The start position of the drawing
+triangle.style.strokeDasharray = length;
+
+// Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+triangle.style.strokeDashoffset = length;
+var scrollpercent = 0;
+
+function firma(hsv){
+
+    //var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+    var cuenta_firma = setInterval(function incremento_firma() {
+
+        // Reverse the drawing (when scrolling upwards)
+        triangle.style.strokeDashoffset = length - scrollpercent;
+
+
+        //console.log(draw);
+        //incColor = incColor + 1;
+        scrollpercent = scrollpercent + 3;
+
+
+        if(scrollpercent >= 1355){
+            clearInterval(cuenta_firma);
+            scrollpercent = 0;
+        }
+
+    }, 5);
+
+
+
+
+
+}
+
+
+//setInterval(firma, 5);
+
+
+
+
+
+
+
+
+
+
 function palabra(word){
 
     var tamy = word.length;
@@ -101,7 +163,8 @@ function palabra2(wordy){
     var letra22 = caracteres22[conta22];
     var aux22 = 1;
 
-    //color(30);
+    //color(60);
+    firma();
     var cuenta22 = setInterval(function incremento2() {
         inc22 = inc22 + 0.2;
 
@@ -113,6 +176,7 @@ function palabra2(wordy){
         letra22 = letra22 + caracteres22[aux22];
         aux22++;
     }, 100);
+
 }
 
 //var cadenas = ["Meloso", "Ángel", "Gato", "Raspberry", "Ardilla", "abogado"];

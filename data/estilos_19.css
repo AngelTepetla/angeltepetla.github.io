@@ -322,7 +322,7 @@ h1.th span.fa{
 
 	}
 	section#contg{
-		background-image: url('we18.png');
+		background-image: url('musical.jpg');
 		background-attachment: fixed;
 		background-size: 100%;
 		background-position: top;
@@ -1187,13 +1187,31 @@ rojo flat dark c6002b
 	    border-color: #1f87dc;
 */
 
-		background-color: #fff;
-		color: #131724;
+		background-color: hsl(210, 100%, 50%);
+		color: #fff;
 		border-style: solid;
 		border-color: #fff;
 		border-width: 5px 5px 5px 5px;
 		font-weight: 700;
 
+	}
+
+	.spann_light{
+
+		font-family: "HelveticaNeue", Arial;
+
+		background-color: #fff;
+		color: #131724;
+		border-style: solid;
+		border-color: #fff;
+		border-width: 5px 5px 5px 5px;
+		font-weight: 500;
+
+	}
+
+	.main_p{
+		color: #fff;
+		background-color: red;
 	}
 
 	h2.h22g1{
@@ -1770,7 +1788,7 @@ div .bottom{
 
 			}
 			section#contg{
-				background-image: url('we18.png');
+				background-image: url('musical.jpg');
 				background-attachment: fixed;
 				background-size: 100%;
 				background-position: top;

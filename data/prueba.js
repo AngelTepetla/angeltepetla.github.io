@@ -101,7 +101,7 @@ function palabra2(wordy){
     var letra22 = caracteres22[conta22];
     var aux22 = 1;
 
-    color(30);
+    //color(30);
     var cuenta22 = setInterval(function incremento2() {
         inc22 = inc22 + 0.2;
 
@@ -116,7 +116,9 @@ function palabra2(wordy){
 }
 
 //var cadenas = ["Meloso", "Ángel", "Gato", "Raspberry", "Ardilla", "abogado"];
-var cadenas = ["PROGRAMACIÓN", "ROBÓTICA", "TECNOLOGÍA", "ELECTRÓNICA", "INNOVACIÓN", "INGENIERÍA"];
+//var cadenas = ["PROGRAMACIÓN", "ROBÓTICA", "TECNOLOGÍA", "ELECTRÓNICA", "INNOVACIÓN", "INGENIERÍA"];
+var cadenas = ["Soy Programador.", "Soy Autodidacta.", "Soy Electricista.", "Soy Analítico.", "Soy Optimista.", "Soy Ingeniero Mecatrónico."];
+
 var tipos = ["mecatrónicos", "programadores", "ingenieros", "empresarios", "personajes", "innovadores"];
 
 

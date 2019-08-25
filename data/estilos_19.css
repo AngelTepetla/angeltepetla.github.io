@@ -1190,7 +1190,7 @@ rojo flat dark c6002b
 		background-color: hsl(210, 100%, 50%);
 		color: #fff;
 		border-style: solid;
-		border-color: #fff;
+		border-color: hsl(210, 100%, 50%);
 		border-width: 5px 5px 5px 5px;
 		font-weight: 700;
 

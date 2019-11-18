@@ -1,27 +1,25 @@
 
 
-var texto = document.getElementById("nombre");
-var texto_nombre = document.getElementById("mi_nombre");
-var li_color = document.getElementById("li_activa");
+var Top_Texto_Soy_Frase  =  document.getElementById("Soy_Frase_Top");
+var Top_Texto_Mi_Nombre  =  document.getElementById("Mi_Nombre_Top");
+var Footer_Texto_Soy     =  document.getElementById("Soy_Footer");
 
-
-var texto_yo = document.getElementById("tipo_yo");
+var li_color         =  document.getElementById("li_activa");
 
 var incColor = 0;
 
-function color(hsv){
 
-
+function Color(hsv){
     var auxColor = 1;
 
-    texto.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
-    texto.style.borderColor = "hsl(" + incColor + ", 100%, 50%";
+    Top_Texto_Soy_Frase.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
+    Top_Texto_Soy_Frase.style.borderColor = "hsl(" + incColor + ", 100%, 50%";
 
-    texto_nombre.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
-    texto_nombre.style.borderColor = "hsl(" + incColor + ", 100%, 50%";
+    Top_Texto_Mi_Nombre.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
+    Top_Texto_Mi_Nombre.style.borderColor = "hsl(" + incColor + ", 100%, 50%";
 
-    texto_yo.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
-    texto_yo.style.borderColor = "hsl(" + incColor + ", 100%, 50%";
+    Footer_Texto_Soy.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
+    Footer_Texto_Soy.style.borderColor = "hsl(" + incColor + ", 100%, 50%";
 
     li_color.style.backgroundColor = "hsl(" + incColor + ", 85%, 50%";
 
@@ -39,17 +37,15 @@ function color(hsv){
             clearInterval(cuentaColor);
         }
 
-        texto.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
+        Top_Texto_Mi_Nombre.style.backgroundColor = "hsl(" + incColor + ", 100%, 50%";
         console.log(incColor);
 
-        //texto.style.backgroundColor="hsl(" + 200 + ", 100%,50%)";
+        //Top_Texto_Mi_Nombre.style.backgroundColor="hsl(" + 200 + ", 100%,50%)";
 
         auxColor++;
     }, 1000);
 */
 }
-
-
 //setInterval(color, 50);
 
 
@@ -67,7 +63,8 @@ var incColor = 0;
 
 // Get the id of the <path> element and the length of <path>
 var length = triangle.getTotalLength() * 1;
-console.log(length);
+
+///console.log(length);
 
 // The start position of the drawing
 triangle.style.strokeDasharray = length;
@@ -76,30 +73,33 @@ triangle.style.strokeDasharray = length;
 triangle.style.strokeDashoffset = length;
 var scrollpercent = 0;
 
-function firma(hsv){
-
+function firma(inicio, fin, paso, caso)
+{
     //var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
-    var cuenta_firma = setInterval(function incremento_firma() {
+    var cuenta_firma = setInterval(function incremento_firma()
+    {
 
-        // Reverse the drawing (when scrolling upwards)
         triangle.style.strokeDashoffset = length - scrollpercent;
-
-
         //console.log(draw);
         //incColor = incColor + 1;
-        scrollpercent = scrollpercent + 3;
+        scrollpercent = scrollpercent + paso;
+        //console.log(scrollpercent);
 
-
-        if(scrollpercent >= 1355){
+        if(scrollpercent >= fin)
+        {
             clearInterval(cuenta_firma);
-            scrollpercent = 0;
+            //console.log("reset");
+
+            if(caso == 1){
+                scrollpercent = fin;
+            }
+            else if(caso == 2){
+                scrollpercent = 0;
+            }
         }
 
     }, 5);
-
-
-
 
 
 }
@@ -107,131 +107,232 @@ function firma(hsv){
 
 //setInterval(firma, 5);
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+var Texto_Footer_Dec;
+var Texto_Footer;
+var Palabra_Footer;
+
+var Texto_Top_Dec;
+var Texto_Top;
+var Palabra_Top;
 
 
+function Cambia_Palabra_Top( palabra_in )
+{
 
+    var caracteres = palabra_in.split('');
+    var inc = 0;  // checar si se usa en otra funcion
 
+    var letra_actual = caracteres[0];
+    var indice_caracter = 1;
 
+    Palabra_Top = palabra_in;
 
-
-function palabra(word){
-
-    var tamy = word.length;
-    //word = word + "";
-    caracteres = word.split('');
-    var inc = 0;
-    conta = 0;
-    var letra = caracteres[conta];
-    var aux = 1;
-
-    ////console.log(tamy);
-
-    //color(30);
-    var cuenta = setInterval(function incremento() {
+    //Color(30);
+    var incremento_top = setInterval(function incremento()
+    {
         //console.log(inc + "inc");
+
         inc = inc + 0.2;
 
-        if(aux >= tamy){
-            clearInterval(cuenta);
+        if( indice_caracter >= palabra_in.length )
+        {
+            clearInterval(incremento_top);
+            clearInterval(Texto_Top);
+            Texto_Top_Dec = setTimeout(Texto_Decremento_Top, 2000);
         }
 
-
-        //texto.style.opacity = inc;
-        texto.innerHTML = letra;
-        //console.log(aux);
-        letra = letra + caracteres[aux];
-        aux++;
+        //Top_Texto_Mi_Nombre.style.opacity = inc;
+        Top_Texto_Soy_Frase.innerHTML = letra_actual;
+        //console.log(indice_caracter);
+        letra_actual = letra_actual + caracteres[indice_caracter];
+        indice_caracter++;
     }, 100);
 
-
-
-    //texto.style.opacity = 0.1;
-    //texto.innerHTML = tipo[conta];
+    //Top_Texto_Mi_Nombre.style.opacity = 0.1;
+    //Top_Texto_Mi_Nombre.innerHTML = tipo[conta];
     ////console.log('conta' + conta);
 }
 
 
+function Texto_Decremento_Top()
+{
+    var indice_decremento = 1;
 
-function palabra2(wordy){
+    var decremento_top = setInterval(function decremento()
+    {
 
-    var tamy22 = wordy.length;
-    caracteres22 = wordy.split('');
-    var inc22 = 0;
-    conta22 = 0;
-    var letra22 = caracteres22[conta22];
-    var aux22 = 1;
+        if( indice_decremento >= Palabra_Top.length )
+        {
+            clearInterval(Texto_Top_Dec);
+            clearInterval(decremento_top);
 
-    //color(60);
-    firma();
-    var cuenta22 = setInterval(function incremento2() {
-        inc22 = inc22 + 0.2;
-
-        if(aux22 >= tamy22){
-            clearInterval(cuenta22);
+            //console.log("out decremento2");
+            Texto_Top = setInterval(Call_Texto_Top, 3000);
         }
 
-        texto_yo.innerHTML = letra22;
-        letra22 = letra22 + caracteres22[aux22];
-        aux22++;
-    }, 100);
+        var string_decremento = Palabra_Top;
+        string_decremento = string_decremento.substring(0, string_decremento.length - indice_decremento);
+        //console.log(string_decremento);
 
+        Top_Texto_Soy_Frase.innerHTML = string_decremento;
+        indice_decremento++;
+    }, 100);
 }
 
-//var cadenas = ["Meloso", "Ángel", "Gato", "Raspberry", "Ardilla", "abogado"];
-//var cadenas = ["PROGRAMACIÓN", "ROBÓTICA", "TECNOLOGÍA", "ELECTRÓNICA", "INNOVACIÓN", "INGENIERÍA"];
-var cadenas = ["Soy Programador.", "Soy Autodidacta.", "Soy Electricista.", "Soy Analítico.", "Soy Optimista.", "Soy Ingeniero Mecatrónico."];
-
-var tipos = ["mecatrónicos", "programadores", "ingenieros", "empresarios", "personajes", "innovadores"];
 
 
-var contaAux = 0;
-function textos(){
-    palabra( cadenas[contaAux] );
-    //palabra2( tipos[contaAux] );
-    contaAux++;
-    var tama = cadenas.length;
-    if (contaAux >= tama){
-        contaAux = 0;
+
+
+
+function Cambia_Palabra_Footer( palabra_in )
+{
+
+    caracteres_footer = palabra_in.split('');
+
+    var inc22 = 0;  // revisar para que es
+
+    var letra_actual_footer = caracteres_footer[0];
+    var indice_caracter_footer = 1;
+    Palabra_Footer = palabra_in;
+
+    //Color(60);
+    //firma(0, 1355, 3);
+    firma(0, 700, 3, 1);
+
+    var incremento_footer = setInterval(function incremento_foot()
+    {
+        inc22 = inc22 + 0.2;  // revisar para que es
+
+        Footer_Texto_Soy.innerHTML = letra_actual_footer;
+        letra_actual_footer = letra_actual_footer + caracteres_footer[indice_caracter_footer];
+        indice_caracter_footer++;
+
+        if( indice_caracter_footer > palabra_in.length )
+        {
+            clearInterval(incremento_footer);
+            clearInterval(Texto_Footer);
+            Texto_Footer_Dec = setTimeout(Texto_Decremento_Footer, 2000);
+        }
+
+
+    }, 100);
+
+    //Footer_Texto_Soy.innerHTML = "a";
+    //Footer_Texto_Soy.innerHTML = palabra_in;
+}
+
+
+function Texto_Decremento_Footer()
+{
+
+    var indice_decremento_footer = 1;
+    firma(700, 1355, 3, 2);
+
+    var decremento_footer = setInterval(function decremento_foot()
+    {
+
+        if( indice_decremento_footer >= Palabra_Footer.length )
+        {
+            clearInterval(Texto_Footer_Dec);
+            clearInterval(decremento_footer);
+            Texto_Footer = setInterval(Call_Texto_Footer, 1500);
+        }
+
+        var string_decremento_footer = Palabra_Footer;
+        string_decremento_footer = string_decremento_footer.substring(0, string_decremento_footer.length - indice_decremento_footer);
+        //console.log(string_decremento_footer);
+
+        Footer_Texto_Soy.innerHTML = string_decremento_footer;
+        indice_decremento_footer++;
+    }, 100);
+}
+
+
+var Cadenas_Top = ["Soy Programador.", "Soy Autodidacta.", "Soy Electricista.", "Soy Analítico.", "Soy Optimista.", "Soy Ingeniero Mecatrónico."];
+var Tipos_Footer = ["mecatrónicos", "programadores", "ingenieros", "empresarios", "personajes", "innovadores"];
+var Indice_Cadena = 0;
+
+function Call_Texto_Top()
+{
+    Cambia_Palabra_Top( Cadenas_Top[Indice_Cadena] );
+    //Cambia_Palabra_Footer( Tipos_Footer[Indice_Cadena] );
+    Indice_Cadena++;
+
+    if (Indice_Cadena >= Cadenas_Top.length )
+    {
+        Indice_Cadena = 0;
     }
 
 }
 
-function textos33(){
-    palabra2( tipos[contaAux] );
+function Call_Texto_Footer()
+{
+    Cambia_Palabra_Footer( Tipos_Footer[Indice_Cadena] );
 }
 
 
 
-setInterval(textos, 3000);
-setInterval(textos33, 4000);
-//setInterval(off, )
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+document.addEventListener('visibilitychange', onVisibilityChange, false);
+
+function onVisibilityChange(e)
+{
+    if(document.hidden)
+    {
+        clearInterval(Texto_Top);
+        clearInterval(Texto_Footer);
+        //clearInterval(Firma_Footer);
+        clearInterval(Texto_Footer_Dec);
+        clearInterval(Texto_Top_Dec);
+        //clearInterval(loopa);
+        console.log("hidden");
+    }
+    else
+    {
+        Texto_Top = setInterval(Call_Texto_Top, 3000);
+        Texto_Footer = setInterval(Call_Texto_Footer, 3000);
+        //setInterval(off, )
+    }
+
+}
 
 
 
 
-var tras = 0;
-setTimeout(function firma(){
-    var cuadro = document.getElementById("firma_yo");
-    //cuadro.style.visibility = "hidden";
 
 
-    var cuenta2 = setInterval(function incremento2() {
+
+
+var Inc_Firma = 0;
+
+var Cuadro_Firma_Cover = setTimeout(function firma_cover()
+{
+    var cuadro_firma = document.getElementById("Cover_Mi_Firma");
+    //cuadro_firma.style.visibility = "hidden";
+
+    var incremento_firma_cover = setInterval(function incremento_cuadro_firm()
+    {
         //console.log(inc + "inc");
-        tras = tras + 70;
+        Inc_Firma = Inc_Firma + 70;
 
-        if(tras >= 1000){
-            clearInterval(cuenta2);
-            cuadro.style.visibility = "hidden";
+        if( Inc_Firma >= 1000 )
+        {
+            clearInterval(incremento_firma_cover);
+            clearInterval(Cuadro_Firma_Cover);
+            cuadro_firma.style.visibility = "hidden";
+            onVisibilityChange(false);
         }
 
-        ///cuadro.style.opacity = opa;
-        //texto.innerHTML = tipo[conta];
+        ///cuadro_firma.style.opacity = opa;
+        //Top_Texto_Mi_Nombre.innerHTML = tipo[conta];
         //letra = letra + tipo[aux];
-        cuadro.style.transform = "translateY(" + tras + "px)";
+        cuadro_firma.style.transform = "translateY(" + Inc_Firma + "px)";
     }, 25);
-
 
 }, 500);
 
@@ -241,15 +342,15 @@ setTimeout(function firma(){
 
 
 /*
-var tras2 = 0;
-var tras2neg = -100;
-*/
+//var tras2 = 0;
+//var tras2neg = -100;
+
 function loopy(){
     var tras2 = 0;
     var tras2neg = -100;
 
-    var parrafo = document.getElementById("tepetla");
-    var in_1 = document.getElementById("inactivo_1");
+    var parrafo  =  document.getElementById("Seccion_3_Soy_Activo");
+    var in_1     =  document.getElementById("Seccion_3_Soy_Inactivo_1");
     //cuadro.style.visibility = "hidden";
 
     parrafo.visibility = "visible";
@@ -265,7 +366,7 @@ function loopy(){
         }
 
         ///cuadro.style.opacity = opa;
-        //texto.innerHTML = tipo[conta];
+        //Top_Texto_Mi_Nombre.innerHTML = tipo[conta];
         //letra = letra + tipo[aux];
         parrafo.style.transform = "translateY(" + tras2 + "px)";
     }, 30);
@@ -282,15 +383,15 @@ function loopy(){
         }
 
         ///cuadro.style.opacity = opa;
-        //texto.innerHTML = tipo[conta];
+        //Top_Texto_Mi_Nombre.innerHTML = tipo[conta];
         //letra = letra + tipo[aux];
         in_1.style.transform = "translateY(" + tras2neg + "px)";
     }, 40);
 
     in_1.style.transform = "translateY(0px)";
 
-    in_1.id = "tepetla";
-    parrafo.id = "inactivo_1";
+    in_1.id = "Seccion_3_Soy_Activo";
+    parrafo.id = "Seccion_3_Soy_Inactivo_1";
 
 };
 
@@ -300,17 +401,11 @@ var palabras = ["PROGRAMACIÓN", "ROBÓTICA", "TECNOLOGÍA", "ELECTRÓNICA", "IN
 var contaAux2 = 0;
 
 function textos2(){
-    /*
-    loopy( palabras[contaAux2] );
-    contaAux++;
-    var tama = cadenas.length;
-    if (contaAux >= tama){
-        contaAux = 0;
-    }*/
     loopy();
 
 }
 
-setInterval(textos2, 4000);
+var loopa = setInterval(textos2, 4000);
 //setInterval(off, )
+*/
 

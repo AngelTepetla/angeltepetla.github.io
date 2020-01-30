@@ -518,7 +518,7 @@ b.nAngel{
       /**/
       /* TAMAÑO MOVIL */
       /**/
-      @media only screen and (max-width: 969px){
+      @media screen and (max-width: 969px){
 
          .namy{
             background-color: #1f87dc;
@@ -531,7 +531,7 @@ b.nAngel{
          }
 
 
-      }
+
       p.titAngel{
          font-size: 9vw;
          font-weight: lighter;
@@ -681,6 +681,9 @@ b.nAngel{
          background-color: #1d87dc;
          padding: 0px 2x;
       }
+
+
+   }
 
 
 

@@ -1,10 +1,17 @@
 
 
+<<<<<<< HEAD
 @keyframes any
 {
    0% {opacity: 0.1}
    50% {opacity: 0.5}
    100% {opacity: 1}
+=======
+@keyframes any{
+    0% {opacity: 0.1}
+    50% {opacity: 0.5}
+    100% {opacity: 1}
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 }
 
 .namy{
@@ -64,16 +71,24 @@ b.nAngel{
     border-color: #1f87dc;
 }
 
+<<<<<<< HEAD
 
 .loop_marcas
 {
+=======
+.loop_marcas{
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
    position: relative;
    overflow: hidden;
    /*background-color: blue;*/
 }
+<<<<<<< HEAD
 
 .contenedor_Sec_Marcas_01
 {
+=======
+.contenedor_Sec_Marcas_01{
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
    /*position: absolute; */
    height: 100%;
    width: 100%;
@@ -82,8 +97,12 @@ b.nAngel{
    display: inline-flex;
    z-index: 5;
 }
+<<<<<<< HEAD
 .contenedor_Sec_Marcas_02
 {
+=======
+.contenedor_Sec_Marcas_02{
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
    position: absolute;
    height: 100%;
    width: 100%;
@@ -92,8 +111,12 @@ b.nAngel{
    display: inline-flex;
    z-index: 7;
 }
+<<<<<<< HEAD
 .hover_img
 {
+=======
+.hover_img{
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
    color: #fff;
 }
 .contenedorSec2{
@@ -183,13 +206,21 @@ b.nAngel{
 }
 
 
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 .img_loop_1:hover .hover_img_loop_1{
    transition-duration: 0.4s;
 
    visibility: visible;
+<<<<<<< HEAD
    /*width: 15.1vw;*
    width: auto;
+=======
+   width: 15.1vw;
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 
    margin-top: 30vh;
    margin-left: 5vw;
@@ -198,6 +229,7 @@ b.nAngel{
    color: #fff;
    text-align: center;
    border-radius: 6px;
+<<<<<<< HEAD
    padding: 0.7vw 0.5vw 0.7vw 0.5vw;
    z-index: 100;
 }*/
@@ -211,13 +243,68 @@ b.nAngel{
    margin-top: 17vh;
    margin-left: 9vw;
    font-size: 0.9em;
+=======
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+
+.img_loop_2:hover .hover_img_loop_2{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 30vh;
+   margin-left: 5vw;
+   font-size: 1.1em;
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
    background-color: black;
    color: #fff;
    text-align: center;
    border-radius: 6px;
+<<<<<<< HEAD
    padding: 0.7vw 0.5vw 0.7vw 0.5vw;
    z-index: 100;
 }
+=======
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+.img_loop_3:hover .hover_img_loop_3{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 30vh;
+   margin-left: 5vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+
+.img_loop_4:hover .hover_img_loop_4{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 30vh;
+   margin-left: 5vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 
 .contenedorSec2 span{
    z-index: -1;
@@ -271,7 +358,11 @@ b.nAngel{
 }
 
 .slider_marcas img{
+<<<<<<< HEAD
    width: 110px;
+=======
+   width: 120px;
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
    margin: auto;
    top: 0;
    bottom: 0;
@@ -318,7 +409,11 @@ b.nAngel{
 }
 
 .slider_marcas img{
+<<<<<<< HEAD
    width: 110px;
+=======
+   width: 120px;
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
    margin: auto;
    top: 0;
    bottom: 0;
@@ -335,7 +430,26 @@ b.nAngel{
    margin-left: 9vw;
    color: transparent;
 }
+<<<<<<< HEAD
 
+=======
+.img_loop_1:hover .hover_img_loop_1{
+   transition-duration: 0.4s;
+
+   visibility: visible;
+   width: 15.1vw;
+
+   margin-top: 17vh;
+   margin-left: 9vw;
+   font-size: 1.1em;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0.7vw 0.4vw 0.7vw 0.4vw;
+   z-index: 100;
+}
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 
 
 
@@ -675,7 +789,11 @@ b.nAngel{
       span#Soy_Footer{
          font-weight: bold;
          background-color: #1d87dc;
+<<<<<<< HEAD
          padding: 0px 2px;
+=======
+         padding: 0px 2x;
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
       }
 
 
@@ -689,6 +807,7 @@ b.nAngel{
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -708,6 +827,8 @@ b.nAngel{
 
 
 
+=======
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 /**/
 /**/
 /* TAMAÑO MOVIL */
@@ -723,6 +844,7 @@ b.nAngel{
    Tamaño logos marcas
 */
 
+<<<<<<< HEAD
 	.logo_nikan{
 	   width: 18vw !important;
 	}
@@ -742,6 +864,28 @@ b.nAngel{
 	.logo_upt{
 	   width: 17vw !important;
 	}
+=======
+
+.logo_nikan{
+   width: 18vw !important;
+}
+.logo_mb{
+   width: 23vw !important;
+}
+.logo_egal{
+   width: 23vw !important;
+}
+
+.logo_cmt{
+   width: 16vw !important;
+}
+.logo_ipsei{
+   width: 15vw !important;
+}
+.logo_upt{
+   width: 17vw !important;
+}
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 
 }
 
@@ -786,7 +930,11 @@ b.nAngel{
 @media only screen and (min-width: 400px) and (max-height: 700px) 
 {
 */
+<<<<<<< HEAD
 @media only screen and (min-width: 0px) and (max-width: 500px) and (min-height: 551px) 
+=======
+@media only screen and (min-width: 0px) and (max-width: 500px) and (min-height: 551px)
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 {
 
 /*
@@ -794,7 +942,10 @@ b.nAngel{
 */
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 .slider_marcas img.subImg_02
 {
    /*width: 15vw !important;*/
@@ -836,7 +987,11 @@ div.caja_holder_B
 
 .slider_marcas img.subImg_02
 {
+<<<<<<< HEAD
    width: 100px;
+=======
+   /*width: 15vw !important;*/
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 }
 
 
@@ -850,6 +1005,12 @@ div.caja_holder_B
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15
 /**/
 /**/
 /* TAMAÑO MOVIL */
@@ -874,6 +1035,7 @@ div.caja_holder_B
 
 
 
+<<<<<<< HEAD
 }
 
 
@@ -982,3 +1144,6 @@ div.caja_holder_B
 	}
 
 }
+=======
+}
+>>>>>>> 5267aa73565213adb4a92aed0e2d2525fc4b7c15

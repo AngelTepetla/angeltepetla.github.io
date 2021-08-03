@@ -88,7 +88,7 @@ $(document).ready(
 			  title: 'Just...',
 			  input: 'text',
 			  text: completar,
-			  inputPlaceholder: '...',
+			  inputPlaceholder: 'Complete the phrase',
 			  showCancelButton: false,
 			  confirmButtonColor: 'pink',
 			  confirmButtonText: 'Aceptar',
@@ -150,7 +150,7 @@ $(document).ready(
 				completar = 'Estudiaste:';
 
 			}
-			else if(nombre == 'Biotecnologia' || nombre == 'biotecnologia'){
+			else if(nombre == 'Biotecnologia' || nombre == 'biotecnologia' || nombre == 'biotecnología' || nombre == 'Biotecnología'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -192,7 +192,7 @@ $(document).ready(
 				completar = 'Me odias?:';
 
 			}
-			else if(nombre == 'No' || nombre == 'no'){
+			else if(nombre == 'No' || nombre == 'no' || nombre == 'Si' || nombre == 'si'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -232,7 +232,7 @@ $(document).ready(
 				km=0; 
 
 				titulo = 'Thank U';
-								completar = 'Pensaba que..., pero me pusieron la:';
+				completar = 'Pensaba que..., pero me pusieron la:';
 
 			}
 			else if(nombre == 'cancion'){

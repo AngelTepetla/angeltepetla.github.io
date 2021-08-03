@@ -19,6 +19,7 @@ $(document).ready(
 	var bandera = 0;
 	var km = 0;
 	var nombre;
+	var inicial = 'Cada palabra desbloquea algo mas...\nEn computadora deberia ser más claro...';
 
 				var titulo = '¿Iniciar?';
 				var completar = 'Chocolate Sin:';
@@ -59,7 +60,7 @@ $(document).ready(
 			var {value: respu} = await swal({
 			  title: titulo,
 			  type: 'question',
-			  text: 'Cada palabra desbloquea algo mas...',
+			  text: inicial,
 			  confirmButtonColor: 'pink',
 			  showCancelButton: true,
 			  cancelButtonText: `No, bye!`,
@@ -150,6 +151,7 @@ $(document).ready(
 				km++;
 				
 				completar = 'Estudiaste:';
+				inicial = 'Cada palabra desbloquea algo mas...';
 
 			}
 			else if(nombre.toLowerCase() == 'biotecnologia' || nombre.toLowerCase() == 'biotecnología'){

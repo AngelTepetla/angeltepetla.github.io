@@ -150,7 +150,7 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++;
 				
-				completar = 'Estudiaste:';
+				completar = 'Estudiaste: B_______a';
 				inicial = 'Cada palabra desbloquea algo mas...';
 
 			}
@@ -207,7 +207,7 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = 'O__t__:';
+				completar = 'Oj___s:';
 
 			}
 			else if(nombre.toLowerCase() == 'ojitos'){

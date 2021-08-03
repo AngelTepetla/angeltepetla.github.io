@@ -605,9 +605,9 @@ span.pro2
 	display: block;
 }
 
-button#botonAdd
+button#botonAdde
 {
-	color: #fff;
+	color: #cc2f7e;
 	filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
 }
 

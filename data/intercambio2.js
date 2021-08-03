@@ -18,6 +18,7 @@ $(document).ready(
 	var datos = [];
 	var bandera = 0;
 	var km = 0;
+	var nombre;
 
 				var titulo = '¿Iniciar?';
 				var completar = 'Chocolate Sin:';
@@ -207,12 +208,12 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'ojitos'){
-				var audio1 = document.getElementById("audio_05");
-				audio1.play();
+				var audio2 = document.getElementById("audio_05");
+				audio2.play();
 
 				titulo = '¿Continuar?';
 				var x = document.getElementsByClassName("op_hidden");
-				console.log(x.length);
+				//console.log(x.length);
 				
 				x[km].style.opacity = "1";
 				km++; 
@@ -221,8 +222,8 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'calabaza'){
-				var audio1 = document.getElementById("audio_05");
-				audio1.play();
+				var audio3 = document.getElementById("audio_05");
+				audio3.play();
 
 				titulo = '¿Continuar?';
 				var x = document.getElementsByClassName("op_hidden_last");
@@ -236,8 +237,8 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'cancion' || nombre.toLowerCase() == 'canción'){
-				var audio1 = document.getElementById("audio_05");
-				audio1.play();
+				var audio4 = document.getElementById("audio_05");
+				audio4.play();
 
 				titulo = '¿Continuar?';
 				var x = document.getElementsByClassName("op_hidden");
@@ -257,10 +258,9 @@ $(document).ready(
 			else{
 				ipAddress = '';
 				nombre = '';
-				activo = 2;
 
-				var audio1 = document.getElementById("audio_04");
-				audio1.play();
+				var audio5 = document.getElementById("audio_04");
+				audio5.play();
 			}
 
 
@@ -270,7 +270,7 @@ $(document).ready(
 
 
 			var color = ['#43A047', 'orange', '#D32F2F', '#D81B60', 'pink', '#eb3593'];
-			var nombre;
+			nombre;
 
 			if(activo == 2){
 

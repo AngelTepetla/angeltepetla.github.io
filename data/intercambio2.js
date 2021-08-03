@@ -132,7 +132,7 @@ $(document).ready(
 			})
 */
 
-			if(nombre == 'Nutella' || nombre == 'nutella'){
+			if(nombre.toLowerCase() == 'nutella'){
 				ipAddress = 'Ángel';
 				nombre = 'Developer';
 				activo = 2;
@@ -150,7 +150,7 @@ $(document).ready(
 				completar = 'Estudiaste:';
 
 			}
-			else if(nombre == 'Biotecnologia' || nombre == 'biotecnologia' || nombre == 'biotecnología' || nombre == 'Biotecnología'){
+			else if(nombre.toLowerCase() == 'biotecnologia' || nombre.toLowerCase() == 'biotecnología'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -164,7 +164,7 @@ $(document).ready(
 				completar = 'C_w:';
 
 			}
-			else if(nombre == 'Caw' || nombre == 'caw'){
+			else if(nombre.toLowerCase() == 'caw'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -178,7 +178,7 @@ $(document).ready(
 				completar = 'Helado o nieve?:';
 
 			}
-			else if(nombre == 'nieve' || nombre == 'Nieve'){
+			else if(nombre.toLowerCase() == 'nieve'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -192,7 +192,7 @@ $(document).ready(
 				completar = 'Me odias?:';
 
 			}
-			else if(nombre == 'No' || nombre == 'no'){
+			else if(nombre.toLowerCase() == 'no' || nombre.toLowerCase() == 'si'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -206,7 +206,7 @@ $(document).ready(
 				completar = 'O__t__:';
 
 			}
-			else if(nombre == 'ojitos' || nombre == 'Ojitos'){
+			else if(nombre.toLowerCase() == 'ojitos'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -220,7 +220,7 @@ $(document).ready(
 				completar = 'C_l___z_:';
 
 			}
-			else if(nombre == 'Calabaza' || nombre == 'calabaza'){
+			else if(nombre.toLowerCase() == 'calabaza'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -235,7 +235,7 @@ $(document).ready(
 				completar = 'Pensaba que..., pero me pusieron la:';
 
 			}
-			else if(nombre == 'cancion'){
+			else if(nombre.toLowerCase() == 'cancion' || nombre.toLowerCase() == 'canción'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 

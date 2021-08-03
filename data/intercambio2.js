@@ -17,6 +17,10 @@ $(document).ready(
 	var i = 0, j = 0;
 	var datos = [];
 	var bandera = 0;
+	var km = 0;
+
+				var titulo = '¿Iniciar?';
+				var completar = 'Chocolate Sin:';
 
     var hiddenElement = document.createElement('a');
 
@@ -33,7 +37,7 @@ $(document).ready(
 */
 
 	function reproduce() {
-		var audio1 = document.getElementById("audio");
+		var audio1 = document.getElementById("audio_02");
 		audio1.play();
 		//console.log("Hola");
 	}
@@ -50,24 +54,21 @@ $(document).ready(
 
 		(async function getIpAddress() {
 
+
 			var {value: respu} = await swal({
-			  title: '¡Cuidado!',
-			  text: '¡Leé bien lo que se te pide a continuación!',
+			  title: titulo,
 			  type: 'question',
 			  confirmButtonColor: 'pink',
 			  showCancelButton: true,
-			  cancelButtonText: `Don't save`,
-			  confirmButtonText: 'Yes!'
+			  cancelButtonText: `No, bye!`,
+			  confirmButtonText: 'Si'
 			})
 			//console.log(respu)
 			if (respu)
 			{
 				//swal('I did not get your favorite color because "${result.dismiss}".')
-				var x = document.getElementsByClassName("op_hidden");
-				var i;
-				for (i = 0; i < x.length; i++) {
-				x[i].style.opacity = "1";
-				}
+				reproduce();
+				
 			}
 			else
 			{
@@ -75,19 +76,28 @@ $(document).ready(
 					text: `Bye!...`,
 					confirmButtonColor: 'pink'
 				})
-				window.location.href = "https://www.google.com.mx";
+				var audio1 = document.getElementById("audio_04");
+				audio1.play();
+				setTimeout(function() {
+					window.location.href = "https://www.google.com.mx";
+				}, 1500);
 				return
 			}
 
 			var {value: ipAddress} = await swal({
-			  title: 'Ingresa solo tú nombre:',
+			  title: 'Just...',
 			  input: 'text',
-			  text: '¡Leé bien lo que se te pide a continuación!',
-			  inputPlaceholder: 'Ángel Tepetla',
+			  text: completar,
+			  inputPlaceholder: '...',
 			  showCancelButton: false,
 			  confirmButtonColor: 'pink',
 			  confirmButtonText: 'Aceptar',
 			  inputValidator: (value) => {
+			  	if (!value)
+			  	{
+			  		var audio1 = document.getElementById("audio_04");
+				audio1.play();
+			  	}
 			    return !value && '¡Intentalo de nuevo!'
 			  }
 			})
@@ -122,22 +132,135 @@ $(document).ready(
 			})
 */
 
-			if(nombre == 'Nutella'){
+			if(nombre == 'Nutella' || nombre == 'nutella'){
 				ipAddress = 'Ángel';
 				nombre = 'Developer';
 				activo = 2;
+
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(x.length);
+				
+				x[km].style.opacity = "1";
+				km++;
+				
+				completar = 'Estudiaste:';
+
 			}
-			
-			if(nombre == 'nutella'){
-				ipAddress = 'Ángel';
-				nombre = 'Developer';
+			else if(nombre == 'Biotecnologia' || nombre == 'biotecnologia'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(x.length);
+				
+				x[km].style.opacity = "1";
+				km++; 
+
+				completar = 'C_w:';
+
+			}
+			else if(nombre == 'Caw' || nombre == 'caw'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(x.length);
+				
+				x[km].style.opacity = "1";
+				km++; 
+
+				completar = 'Helado o nieve?:';
+
+			}
+			else if(nombre == 'nieve' || nombre == 'Nieve'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(x.length);
+				
+				x[km].style.opacity = "1";
+				km++; 
+
+				completar = 'Me odias?:';
+
+			}
+			else if(nombre == 'No' || nombre == 'no'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(x.length);
+				
+				x[km].style.opacity = "1";
+				km++; 
+
+				completar = 'R___z_a:';
+
+			}
+			else if(nombre == 'Ragazza' || nombre == 'ragazza'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(x.length);
+				
+				x[km].style.opacity = "1";
+				km++; 
+
+				completar = 'O__t__:';
+
+			}
+			else if(nombre == 'ojitos' || nombre == 'Ojitos'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden_last");
+				console.log(km);
+				
+				x[0].style.opacity = "1";
+				km=0; 
+
+				titulo = 'Thank U';
+								completar = 'Pensaba que..., pero me pusieron la:';
+
+			}
+			else if(nombre == 'cancion'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(km);
+				
+				for(km = 0; km<x.length; km++){
+					x[km].style.opacity = "1";
+				}
+				var x = document.getElementsByClassName("op_hidden_last");
+				x[0].style.opacity = "1";
+
+				titulo = 'Si llegaste hasta aqui, thank U...';
+												completar = '...';
+
+
+			}
+			else{
+				ipAddress = '';
+				nombre = '';
 				activo = 2;
-			}
 
-			else if(matricula == '1631110920'){
-				ipAddress = 'Marilu';
-				nombre = 'Marilu';
-				activo = 3;
+				var audio1 = document.getElementById("audio_04");
+				audio1.play();
 			}
 
 
@@ -145,7 +268,8 @@ $(document).ready(
 
 
 
-			var color = ['#43A047', 'orange', '#D32F2F', '#D81B60', '#141414', '#304FFE'];
+
+			var color = ['#43A047', 'orange', '#D32F2F', '#D81B60', 'pink', '#eb3593'];
 			var nombre;
 
 			if(activo == 2){
@@ -156,7 +280,7 @@ $(document).ready(
 				indexado = fijo2;
 				aleatorio = fijo2;
 
-				color[i] = '#43A047';
+				//color[i] = '#43A047';
 
 			}
 
@@ -167,7 +291,7 @@ $(document).ready(
 				indexado = fijo;
 				aleatorio = fijo;
 
-				color[i] = '#D81B60';
+				//color[i] = '#D81B60';
 
 			}
 
@@ -213,12 +337,9 @@ $(document).ready(
 
 	 		var contenedor = document.getElementById("contenedor_principal");
 	 		contenedor.style.backgroundColor = color[i];
-
-	 		i++;
+	 		console.log(i);
 	 		var longy = color.length;
 
-
-	 		console.log("#" + indexado + " recibira de " + ipAddress);
 	 		var cadena = "#" + indexado + " recibira de  " + ipAddress;
 
 	 		//logger = logger + indexado + " ;" + matricula + " ;" + apellido + " ;" + materno + " ;" + ipAddress + " ;" + correo + " ;" + celular + " ;" + respuesta + "\n";
@@ -226,7 +347,7 @@ $(document).ready(
 	 		extra = cadena + "\n";
 	 		datos[j] = loggery;
 	 		j++;
-
+	 		i++;
 
 	 		if(i==longy){
 	 			i = 0;
@@ -235,14 +356,7 @@ $(document).ready(
 	 		}
 
 
-
-
-	 		var x = document.createElement("li");
-	 		x.setAttribute("class", "nol"); // added line
-		    var t = document.createTextNode(cadena);
-		    x.appendChild(t);
-		    document.getElementById("lista_nuevos").appendChild(x);
-
+/*
 
 		    setTimeout(function() {
 				swal({
@@ -260,7 +374,7 @@ $(document).ready(
 				})
 
 		    }, 2500);
-
+*/
 
 
 
@@ -281,13 +395,13 @@ $(document).ready(
 				my_cnt.style.textAlign = "center";
 
 				setTimeout(function() {
-					my_cliente.innerHTML = "¡Hola " + ipAddress + "! " + "Tú regalo es para: <br> " + indexado + "<br><br>";
-					document.getElementById("botonG").innerHTML = "Generar, " + restantes;
+					//my_cliente.innerHTML = "¡Hola " + ipAddress + "! " + "Tú regalo es para: <br> " + indexado + "<br><br>";
+					document.getElementById("botonG").innerHTML = "Continuar";
 
 
 
-					var audio1 = document.getElementById("audio_02");
-					audio1.play();
+					//var audio1 = document.getElementById("audio_02");
+					//audio1.play();
 				}, 2500);
 
 

@@ -28,7 +28,7 @@
 	<script type="text/javascript" defer="" src="./data/intercambio2.js"></script>
 	<script type="text/javascript" defer="" src="./data/colors.js"></script>
 
-	<link rel="stylesheet" href="./Stuhl_files/font-awesome.min.css">
+	<link rel="stylesheet" href="./data/font-awesome.min.css">
 
 	<!--
 	<link rel="stylesheet" type="text/css" href="./Stuhl_files/fonts.css">
@@ -121,27 +121,28 @@
 		  <audio id="audio_03" src="./angel/coin.mp3"></audio>
 		  <audio id="audio_04" src="./angel/pacman.mp3"></audio>
 		  <audio id="audio_05" src="./angel/ganar.mp3"></audio>
+		  <audio id="audio_06" src="./angel/mario-bros-rem.mp3"></audio>
 
-		  <div id="contenedor_texto">
-			  <h2 class="animated fadeIn" id="titulo_fade">iMU</h2>
+		  <div id="contenedor_texto" class="">
+			  <h2 class="animated fadeIn op_hidden_last" id="titulo_fade">iMU</h2>
 		  </div>
 
 		  <h2 class="h22g1" id="clie"><span id="cliente" style="text-align: center; display: none;">¡Hola, tú seras el primero!</span></h2>
 
 		  <div id="contenedor_svg" class="op_hidden">
-			  <svg id="mySVG">
-				  <path fill="none" stroke="#ff2266" stroke-width="4" id="triangle" d="m 116.11916,70.487647 c 0,0 -13.58737,-14.594331 -39.055038,-7.63625 -24.585366,6.717031 -37.841335,38.500033 -38.175445,63.073263 -0.345959,25.44415 14.789664,55.36435 37.738224,66.35928 15.501782,7.42707 37.273099,2.24556 50.907819,-8.22157 19.53055,-14.99324 25.1554,-18.22522 30.21856,-67.40173 3.8846,-37.729288 -21.21512,-55.862416 -22.23501,-4.83003 -0.98312,49.19201 5.24769,58.13224 23.5912,78.29243 7.18438,7.89588 17.34182,11.19324 29.6577,12.08575 19.80293,1.43506 33.40533,1.62382 41.09039,-39.54596 7.68504,-41.16979 -38.27378,-27.69766 -51.91986,-12.2066 -11.63024,13.20273 -14.49919,40.29807 8.36311,51.55908 19.23107,9.47242 33.6109,-6.10792 40.39648,-17.45858 11.49653,-19.23086 9.15997,-38.35324 9.15997,-38.35324 0,0 -0.67453,-1.87524 -5.94287,7.93543 -5.26837,9.81072 -13.40353,57.8264 12.31912,53.9617 13.80049,-2.07345 17.42549,-9.53604 22.07328,-17.75584 8.97634,-15.87495 14.77551,-63.81753 6.82832,-49.54903 -9.66624,17.35496 -4.21578,54.31872 15.40332,64.50742 7.25211,3.76615 17.23122,-3.05896 22.78063,-9.05735 11.89476,-12.85704 21.32539,-34.5344 15.56415,-50.18813 -4.98449,-13.5433 -4.93103,18.16911 -4.35814,22.51519 3.36285,25.51208 17.80806,44.01906 51.76357,40.94146" style="stroke-dasharray: 1239.45; stroke-dashoffset: 0;"></path>Sorry, your browser does not support inline SVG.
+			  <svg id="mySVG" class="shadow">
+				  <path fill="none" stroke="#fff" stroke-width="7" id="triangle" d="m 116.11916,70.487647 c 0,0 -13.58737,-14.594331 -39.055038,-7.63625 -24.585366,6.717031 -37.841335,38.500033 -38.175445,63.073263 -0.345959,25.44415 14.789664,55.36435 37.738224,66.35928 15.501782,7.42707 37.273099,2.24556 50.907819,-8.22157 19.53055,-14.99324 25.1554,-18.22522 30.21856,-67.40173 3.8846,-37.729288 -21.21512,-55.862416 -22.23501,-4.83003 -0.98312,49.19201 5.24769,58.13224 23.5912,78.29243 7.18438,7.89588 17.34182,11.19324 29.6577,12.08575 19.80293,1.43506 33.40533,1.62382 41.09039,-39.54596 7.68504,-41.16979 -38.27378,-27.69766 -51.91986,-12.2066 -11.63024,13.20273 -14.49919,40.29807 8.36311,51.55908 19.23107,9.47242 33.6109,-6.10792 40.39648,-17.45858 11.49653,-19.23086 9.15997,-38.35324 9.15997,-38.35324 0,0 -0.67453,-1.87524 -5.94287,7.93543 -5.26837,9.81072 -13.40353,57.8264 12.31912,53.9617 13.80049,-2.07345 17.42549,-9.53604 22.07328,-17.75584 8.97634,-15.87495 14.77551,-63.81753 6.82832,-49.54903 -9.66624,17.35496 -4.21578,54.31872 15.40332,64.50742 7.25211,3.76615 17.23122,-3.05896 22.78063,-9.05735 11.89476,-12.85704 21.32539,-34.5344 15.56415,-50.18813 -4.98449,-13.5433 -4.93103,18.16911 -4.35814,22.51519 3.36285,25.51208 17.80806,44.01906 51.76357,40.94146" style="stroke-dasharray: 1239.45; stroke-dashoffset: 0;"></path>Sorry, your browser does not support inline SVG.
 			  </svg>
 		  </div>
 
-		  <div class="botonConte op_hidden">
-			  <button class="bgenerador" id="botonG">Generar</button>
+		  <div class="botonConte ">
+			  <button class="bgenerador" id="botonG">Iniciar</button>
 		  </div>
 
 		  
 
 		  <div class="botonConte2 op_hidden">
-			  <button class="bgenerador2" id="botonAdd">by mB - 2021</button>
+			  <button class="bgenerador2" id="botonAdd">by ÁngelT - 2021</button>
 		  </div>
 
 		  </section>
@@ -160,7 +161,9 @@
 	    <div class="section op_hidden">
 
 
-
+<div class="botonConte3 ">
+			  <button class="bgenerador2" id="botonAdd">by ÁngelT - 2021</button>
+		  </div>
 
 
 
@@ -169,9 +172,7 @@
 
 
 		<div class="my_texto_footer">
-	    			<p class="titulo_footer">Soy<b> Ángel Tepetla</b> </p>
-					<p class="texto_footer"><span>Uno de los futuros grandes ingenieros de México.</span><br><br> <br>¿Quieres saber más de mi? Te invito a contactarme y a que agendemos una entrevista. <br>Descarga mi CV en formato PDF en el primer icono.
-			        </p>
+	    			<p class="titulo_footer" style="color: white"><b>Bonus</b> </p>
 	    </div>
 
 
@@ -179,38 +180,32 @@
 
         <div class="bloques-footer">
 
-            <div class="quote">
-            	<svg width="140" height="130" class="firma">
-          			<path fill="none" stroke="#fff" stroke-width="0.5" id="triangle" d="m 6.8356405,80.100272 c 0,0 47.4007515,-16.531599 55.6506095,-32.627093 7.349745,-14.339362 3.652241,-20.253212 3.652241,-20.253212 0,0 -2.85453,-6.625801 -10.503669,-8.368941 -8.558426,-1.223524 -12.737736,3.720665 -13.235746,6.376821 -0.49803,2.656161 -0.7344,15.32536 3.78309,28.482469 3.47823,13.806618 11.386506,43.785231 11.386506,43.785231 0,0 1.291271,9.508313 -5.16504,17.490623 -6.456266,7.98229 -27.116323,-0.70432 -27.116323,-0.70432 0,0 -8.334429,-2.93466 -10.916941,-8.92139 -2.582517,-5.986731 4.225933,-11.738677 4.225933,-11.738677 0,0 8.68661,-3.756374 18.781873,-4.46069 10.095232,-0.704324 24.097206,-1.950068 34.684201,-1.142286 10.586985,0.807781 33.400075,3.490013 33.400075,3.490013 M 94.916026,36.842154 c 0,0 -27.191275,60.095356 -23.564021,62.719185 3.62727,2.623821 15.342185,-33.068314 16.671735,-30.318281 1.32954,2.750028 0.60783,20.335274 0.60783,20.335274 0,0 0.95666,2.76302 5.733226,-8.033437 4.776574,-10.796448 -3.555786,7.331822 -0.96789,8.625335 1.01719,0.508433 7.864964,-15.685895 7.563514,-9.746994 l -0.89887,4.996209 c 0,0 13.6794,-43.55792 4.98484,-48.58377 -8.694574,-5.025845 27.86481,39.616456 27.05259,42.774275 -0.81221,3.15782 0.4787,6.08681 -13.07835,5.615399 -59.444167,-2.067028 -137.701974,7.34693 -137.701974,7.34693 M 18.588781,29.636908 c 0,0 4.32686,33.627841 31.479885,44.836026 27.152999,11.208186 61.447604,4.972811 86.908744,-36.336589" style="stroke-dasharray: 1119.22; stroke-dashoffset: 0;"></path>
-          			Sorry, tu navegador no soporta SVG...
-      			</svg>
-              <h4 class="footer-mini">"We can be everything..."</h4>
-            </div> <!-- end .col-sm-4 -->
-
-          <div class="iconos">
+            
+          <div class="iconos" style="padding-right: 0">
               <!--  <h4 class="footer-contacto">Somos digitales, acércate...</h4>  -->
               <div class="social-icons">
 
-                <a href="./angel/cv_web.pdf" class="social-icon5" target="_blank"><i class="fa fa-download"></i></a>
-				<a href="##" class="social-icon5" onclick="celular()"><i class="fa fa-mobile" ></i></a>
-				<a href="http://www.linkedin.com/in/AngelTepetla" class="social-icon5"><i class="fa fa-linkedin"></i></a>
-				<a href="mailto:megadiego1@gmail.com" class="social-icon5"><i class="fa fa-envelope-o"></i></a>
-				<a href="https://api.whatsapp.com/send?phone=5212225332044" class="social-icon5" target="_blank"><i class="fa fa-whatsapp"></i></a>
-
+                <a href="##" class="social-icon5" onclick="celular()"><i class="fa fa-gift" ></i></a>
+				
 				<script>
 				function celular() {
-				    swal({
-						  title: 'Contacta conmigo, podemos trabajar juntos :) .\nTe dejo mi numero de celular: +52 2225332044',
+				    var audio2 = document.getElementById("audio_06");
+					audio2.play();
+
+				    var res2 = swal({
+						  title: ';)',
 						  width: 600,
-						  padding: '3em',
-						  background: '#fff',
+						  padding: '2em',
+						  background: '#ffffff00',
 						  backdrop: `
 						    rgba(0,0,123,0.4)
 						    url("./angel/nyan-cat.gif")
 						    center left
 						    no-repeat
-						  `
-						})
+						  `,onClose: () => {
+							audio2.pause();						    }
+						});
+				    
 				}
 				</script>
 
@@ -221,8 +216,9 @@
 
         </div> <!-- end .container -->
 
+
       </div> <!-- end .footer -->
-      <div class="bottom animated fadeIn rt2sss" >&copy; 2016 - 2018 &middot; multiBit <span class="hover_marca">Una marca de Ángel Tepetla</span></div> <!-- end .bottom -->
+      <div class="bottom animated fadeIn rt2sss" >&copy; 2016 - 2021 &middot; mB <span class="hover_marca">Una marca de Ángel Tepetla</span></div> <!-- end .bottom -->
     </footer> <!-- end .footer -->
 
 
@@ -261,13 +257,13 @@
    
 		typewriter
 			.typeString('<span class="h2_min">i')
+			.pauseFor(350)
+			.typeString('<span class="h2_min">.')
+			.pauseFor(350)
+			.typeString('<span class="h2_min">.')
+			.pauseFor(350)
+			.typeString('<span class="h2_min">.')
 			.pauseFor(2000)
-			.typeString('<span class="h2_min">.')
-			.pauseFor(350)
-			.typeString('<span class="h2_min">.')
-			.pauseFor(350)
-			.typeString('<span class="h2_min">.')
-			.pauseFor(350)
 
 			.deleteChars(3)
 			.pauseFor(1000)
@@ -278,11 +274,11 @@
 			.pauseFor(350)
 			.typeString('<span class="h2_min">...')
 
-			.pauseFor(1000)
+			.pauseFor(1500)
 
 			.deleteChars(5)
 			.pauseFor(1000)
-    		.typeString(' <span class="proact pro">Miss</span> You...')
+    		.typeString(' <span class="proact pro2">Miss</span> You...')
 			.callFunction(customNodeCreator)
 
     		.pauseFor(2500)

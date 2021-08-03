@@ -59,6 +59,7 @@ $(document).ready(
 			var {value: respu} = await swal({
 			  title: titulo,
 			  type: 'question',
+			  text: 'Cada palabra desbloquea algo mas...',
 			  confirmButtonColor: 'pink',
 			  showCancelButton: true,
 			  cancelButtonText: `No, bye!`,
@@ -89,7 +90,7 @@ $(document).ready(
 			  title: 'Just...',
 			  input: 'text',
 			  text: completar,
-			  inputPlaceholder: 'Complete the phrase',
+			  inputPlaceholder: 'Completa la frase',
 			  showCancelButton: false,
 			  confirmButtonColor: 'pink',
 			  confirmButtonText: 'Aceptar',
@@ -138,7 +139,7 @@ $(document).ready(
 				nombre = 'Developer';
 				activo = 2;
 
-				var audio1 = document.getElementById("audio_05");
+				var audio1 = document.getElementById("audio_03");
 				audio1.play();
 
 				titulo = '¿Continuar?';
@@ -152,7 +153,7 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'biotecnologia' || nombre.toLowerCase() == 'biotecnología'){
-				var audio1 = document.getElementById("audio_05");
+				var audio1 = document.getElementById("audio_03");
 				audio1.play();
 
 				titulo = '¿Continuar?';
@@ -166,7 +167,7 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'caw'){
-				var audio1 = document.getElementById("audio_05");
+				var audio1 = document.getElementById("audio_03");
 				audio1.play();
 
 				titulo = '¿Continuar?';
@@ -180,7 +181,7 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'nieve'){
-				var audio1 = document.getElementById("audio_05");
+				var audio1 = document.getElementById("audio_03");
 				audio1.play();
 
 				titulo = '¿Continuar?';
@@ -194,7 +195,7 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'no' || nombre.toLowerCase() == 'si'){
-				var audio1 = document.getElementById("audio_05");
+				var audio1 = document.getElementById("audio_03");
 				audio1.play();
 
 				titulo = '¿Continuar?';
@@ -208,21 +209,21 @@ $(document).ready(
 
 			}
 			else if(nombre.toLowerCase() == 'ojitos'){
-				var audio2 = document.getElementById("audio_05");
+				var audio2 = document.getElementById("audio_03");
 				audio2.play();
 
 				titulo = '¿Continuar?';
 				var x = document.getElementsByClassName("op_hidden");
 				//console.log(x.length);
 				
-				x[km].style.opacity = "1";
+				x[km-1].style.opacity = "1";
 				km++; 
 
 				completar = 'C_l___z_:';
 
 			}
 			else if(nombre.toLowerCase() == 'calabaza'){
-				var audio3 = document.getElementById("audio_05");
+				var audio3 = document.getElementById("audio_03");
 				audio3.play();
 
 				titulo = '¿Continuar?';

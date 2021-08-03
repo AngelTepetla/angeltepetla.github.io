@@ -192,21 +192,7 @@ $(document).ready(
 				completar = 'Me odias?:';
 
 			}
-			else if(nombre == 'No' || nombre == 'no' || nombre == 'Si' || nombre == 'si'){
-				var audio1 = document.getElementById("audio_05");
-				audio1.play();
-
-				titulo = '¿Continuar?';
-				var x = document.getElementsByClassName("op_hidden");
-				console.log(x.length);
-				
-				x[km].style.opacity = "1";
-				km++; 
-
-				completar = 'R___z_a:';
-
-			}
-			else if(nombre == 'Ragazza' || nombre == 'ragazza'){
+			else if(nombre == 'No' || nombre == 'no'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 
@@ -221,6 +207,20 @@ $(document).ready(
 
 			}
 			else if(nombre == 'ojitos' || nombre == 'Ojitos'){
+				var audio1 = document.getElementById("audio_05");
+				audio1.play();
+
+				titulo = '¿Continuar?';
+				var x = document.getElementsByClassName("op_hidden");
+				console.log(x.length);
+				
+				x[km].style.opacity = "1";
+				km++; 
+
+				completar = 'C_l___z_:';
+
+			}
+			else if(nombre == 'Calabaza' || nombre == 'calabaza'){
 				var audio1 = document.getElementById("audio_05");
 				audio1.play();
 

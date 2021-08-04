@@ -8,7 +8,7 @@ $(document).ready(
 
 	var lockers = ['Jorge Alberto', 'José Manuel', 'Diana Margarita', 'Flor Ivón', 'José Armando', 'Javier', 'Edilberto', 'Gustavo', 'José Luis', 'Juan Carlos', 'Juan Pablo', 'Aarón', 'Donovan Totomoch', 'Bryan', 'Orlando Uriel', 'Andrés', 'José Mauricio', 'José Antonio', 'David Israel'];
 	//var lockers = ['A', 'B', 'C', 'D', 'E'];
-	var fijo = 'Ángel Tepetla', fijo2 = 'Marilú';
+	var fijo = 'at', fijo2 = 'mmn';
 
 
 	var longitud = lockers.length;
@@ -19,7 +19,7 @@ $(document).ready(
 	var bandera = 0;
 	var km = 0;
 	var nombre;
-	var inicial = 'Cada palabra desbloquea algo mas...\nEn computadora deberia ser más claro...';
+	var inicial = 'Cada palabra desbloquea algo más (hay tres secciones, swipe!)...\nEn computadora deberia ser más claro...';
 
 				var titulo = '¿Iniciar?';
 				var completar = 'Chocolate Sin:';
@@ -151,7 +151,7 @@ $(document).ready(
 				km++;
 				
 				completar = 'Estudiaste: B_______a';
-				inicial = 'Cada palabra desbloquea algo mas...';
+				inicial = 'Cada palabra desbloquea algo más (hay tres secciones abajo, swipe!)...\nEn computadora deberia ser más claro...';
 
 			}
 			else if(nombre.toLowerCase() == 'biotecnologia' || nombre.toLowerCase() == 'biotecnología'){

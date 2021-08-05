@@ -314,11 +314,12 @@ $(document).ready(
 				var x = document.getElementsByClassName("op_hidden_last");
 				x[0].style.opacity = "1";
 
-				div1.classList.remove("active");
-				div1.classList.remove("fp_completely");
+				
+				//div1.classList.remove("active");
+				//div1.classList.remove("fp_completely");
 
-				div2.classList.add("active");
-				div2.classList.add("fp_completely");
+				//div2.classList.add("active");
+				//div2.classList.add("fp_completely");
 
 				titulo = 'Si llegaste hasta aqui, thank U...';
 				inicial = '...';

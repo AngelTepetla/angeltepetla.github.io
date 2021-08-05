@@ -22,7 +22,7 @@ $(document).ready(
 	var inicial = 'Cada palabra desbloquea algo más (hay tres secciones, swipe!)...\nEn computadora deberia ser más claro...';
 
 				var titulo = '¿Iniciar?';
-				var completar = 'Chocolate Sin:';
+				var completar = '(1/7) Chocolate Sin:';
 
     var hiddenElement = document.createElement('a');
 
@@ -150,7 +150,7 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++;
 				
-				completar = 'Estudiaste: B_______a';
+				completar = '(2/7) Estudiaste: B_______a';
 				inicial = 'Cada palabra desbloquea algo más (hay tres secciones abajo, swipe!)...\nEn computadora deberia ser más claro...';
 
 			}
@@ -165,7 +165,9 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = 'C_w:';
+				inicial = 'Cada palabra desbloquea algo más (hay tres secciones abajo, swipe!)...';
+
+				completar = '(3/7) C_w:';
 
 			}
 			else if(nombre.toLowerCase() == 'caw'){
@@ -179,7 +181,7 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = 'Helado o nieve?:';
+				completar = '(4/7) Helado o nieve?:';
 
 			}
 			else if(nombre.toLowerCase() == 'nieve'){
@@ -193,7 +195,7 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = 'Me odias?:';
+				completar = '(5/7) Me odias?:';
 
 			}
 			else if(nombre.toLowerCase() == 'no' || nombre.toLowerCase() == 'si'){
@@ -207,7 +209,7 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = 'Oj___s:';
+				completar = '(6/7) Oj___s:';
 
 			}
 			else if(nombre.toLowerCase() == 'ojitos'){
@@ -221,7 +223,7 @@ $(document).ready(
 				x[km-1].style.opacity = "1";
 				km++; 
 
-				completar = 'C_l___z_:';
+				completar = '(7/7) Cal_b_za:';
 
 			}
 			else if(nombre.toLowerCase() == 'calabaza'){
@@ -236,7 +238,8 @@ $(document).ready(
 				km=0; 
 
 				titulo = 'Thank U';
-				completar = 'Pensaba que..., pero me pusieron la:';
+				inicial = 'La siguiente palabra desbloquea todo, el orden en el que se ingresen realmente no importa...';
+				completar = '(Bonus) Pensaba que..., pero me pusieron la:';
 
 			}
 			else if(nombre.toLowerCase() == 'cancion' || nombre.toLowerCase() == 'canción'){
@@ -254,7 +257,8 @@ $(document).ready(
 				x[0].style.opacity = "1";
 
 				titulo = 'Si llegaste hasta aqui, thank U...';
-												completar = '...';
+				inicial = '...';
+				completar = '...';
 
 
 			}

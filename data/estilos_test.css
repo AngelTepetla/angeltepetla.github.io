@@ -527,11 +527,11 @@ h2
 }
 .op_hidden
 {
-	opacity: 0.9;
+	opacity: 0;
 }
 .op_hidden_last
 {
-	opacity: 0.9;
+	opacity: 0;
 }
 
 div#contenedor_div3

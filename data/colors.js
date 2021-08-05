@@ -5,7 +5,7 @@ new fullpage('#fullpage', {
 });
 */
 new fullpage('#fullpage', {
-	sectionsColor: ['#1bbc9b', '#4BBFC3', '#1c1c1c']
+	sectionsColor: ['#1bbc9b', 'pink', '#1c1c1c']
 });
 
 

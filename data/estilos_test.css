@@ -534,6 +534,32 @@ h2
 	opacity: 0;
 }
 
+section#texto_inicial
+{
+	idth: 100vw;
+    height: 100vh;
+    display: flex;
+    /* margin: auto; */
+    position: absolute;
+}
+.titulo_inicial
+{
+	color: #1c1c1c;
+    /* position: relative; */
+    margin: auto;
+    display: flex;
+    /* top: 50vh; */
+    /* top: 0; */
+    /* bottom: 0; */
+    padding: 0 9em;
+    vertical-align: middle;
+    /* justify-content: center; */
+    text-align: center;
+    /* left: 46vw; */
+    font-size: 1.5em;
+    z-index: 1000;
+}
+
 div#contenedor_div3
 {
 	background-color: #1c1c1c;

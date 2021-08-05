@@ -161,6 +161,8 @@ $(document).ready(
 				inicial = 'Cada palabra desbloquea algo más (hay tres secciones abajo, swipe!)...\nEn computadora deberia ser más claro...';
 				titulo_pregunta = '2/7';
 
+				document.getElementById("texto_inicial").style.display = "none";
+
 				swal({
 					type: 'success',
 					text: `Correcto!`,

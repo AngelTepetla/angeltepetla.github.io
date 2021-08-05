@@ -5,6 +5,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
 	<meta name="description" content="">
 	<link rel="icon" type="image/png" href="./angel/mb.ico" sizes="32x32">
 
@@ -13,8 +14,6 @@
 
 
 	<script src="./data/sweetalert2.all.min.js"></script>
-	<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
-	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 	<script src="./data/sweetalert2.min.js"></script>
 	<link rel="stylesheet" href="./data/sweetalert2.min.css">
 
@@ -55,190 +54,168 @@
 
 
 </head>
+
+<!--
 <script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-	gtag('config', 'UA-82182123-1');
-	</script>
-
+gtag('config', 'UA-82182123-1');
+</script>
+-->
 
 <body class="" style="">
 
-
-
-
+	<!--∫
+	<ul id="menu">
+		<li data-menuanchor="contenedor_principal" class="active"><a href="#contenedor_principal">First slide</a></li>
+		<li data-menuanchor="contenedor_div2"><a href="#contenedor_div2">Second slide</a></li>
+		<li data-menuanchor="contenedor_div3"><a href="#contenedor_div3">Third slide</a></li>
+	</ul>
+-->
 	<div id="fullpage">
-
 		<section class="sectsion op_hidden" id="contenedor_dna">
 			<main>
 				<dna>
-				  <column>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-				  </column>
-				  <column>
-					<dash></dash>
-					<dash></dash>
-					<dash></dash>
-					<dash></dash>
-					<dash></dash>
-					<dash></dash>
-					<dash></dash>
-					<dash></dash>
-				  </column>
-				  <column>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-					<dot></dot>
-				  </column>
+					<column>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+					</column>
+					<column>
+						<dash></dash>
+						<dash></dash>
+						<dash></dash>
+						<dash></dash>
+						<dash></dash>
+						<dash></dash>
+						<dash></dash>
+						<dash></dash>
+					</column>
+					<column>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+						<dot></dot>
+					</column>
 				</dna>
-			  </main>
+			</main>
 		</section>
 
 		
-
-
 	    <div class="section op_hidden" id="contenedor_principal">
 		</div>
 
 
 
 
-	<div class="section">
+		<div class="section" id="contenedor_div2">
+			<section class="sectsion op_hidden" id="contenedor_fondo">
+			</section>
 
-		<section class="sectsion op_hidden" id="contenedor_fondo">
-		</section>
+			<section class="contenedorg1" id="contg1">
+				<section class="textog1" id="text1">
 
-		<section class="contenedorg1" id="contg1">
-			<section class="textog1" id="text1">
+					<br><br><br>
+					<audio id="audio" src="./angel/notification.mp3"></audio>
+					<audio id="audio_02" src="./angel/notification2.mp3"></audio>
+					<audio id="audio_03" src="./angel/coin.mp3"></audio>
+					<audio id="audio_04" src="./angel/pacman.mp3"></audio>
+					<audio id="audio_05" src="./angel/ganar.mp3"></audio>
+					<audio id="audio_06" src="./angel/mario-bros-rem.mp3"></audio>
 
-		  <br><br><br>
-		  <audio id="audio" src="./angel/notification.mp3"></audio>
-		  <audio id="audio_02" src="./angel/notification2.mp3"></audio>
-		  <audio id="audio_03" src="./angel/coin.mp3"></audio>
-		  <audio id="audio_04" src="./angel/pacman.mp3"></audio>
-		  <audio id="audio_05" src="./angel/ganar.mp3"></audio>
-		  <audio id="audio_06" src="./angel/mario-bros-rem.mp3"></audio>
+					<div id="contenedor_texto" class="">
+						<h2 class="animated fadeIn op_hidden_last" id="titulo_fade">iMU</h2>
+					</div>
 
-		  <div id="contenedor_texto" class="">
-			  <h2 class="animated fadeIn op_hidden_last" id="titulo_fade">iMU</h2>
-		  </div>
+		  			<h2 class="h22g1" id="clie"><span id="cliente" style="text-align: center; display: none;">¡Hola, tú seras el primero!</span></h2>
 
-		  <h2 class="h22g1" id="clie"><span id="cliente" style="text-align: center; display: none;">¡Hola, tú seras el primero!</span></h2>
+					<div id="contenedor_svg" class="op_hidden">
+						<svg id="mySVG" class="shadow">
+							<path fill="none" stroke="#fff" stroke-width="7" id="triangle" d="m 116.11916,70.487647 c 0,0 -13.58737,-14.594331 -39.055038,-7.63625 -24.585366,6.717031 -37.841335,38.500033 -38.175445,63.073263 -0.345959,25.44415 14.789664,55.36435 37.738224,66.35928 15.501782,7.42707 37.273099,2.24556 50.907819,-8.22157 19.53055,-14.99324 25.1554,-18.22522 30.21856,-67.40173 3.8846,-37.729288 -21.21512,-55.862416 -22.23501,-4.83003 -0.98312,49.19201 5.24769,58.13224 23.5912,78.29243 7.18438,7.89588 17.34182,11.19324 29.6577,12.08575 19.80293,1.43506 33.40533,1.62382 41.09039,-39.54596 7.68504,-41.16979 -38.27378,-27.69766 -51.91986,-12.2066 -11.63024,13.20273 -14.49919,40.29807 8.36311,51.55908 19.23107,9.47242 33.6109,-6.10792 40.39648,-17.45858 11.49653,-19.23086 9.15997,-38.35324 9.15997,-38.35324 0,0 -0.67453,-1.87524 -5.94287,7.93543 -5.26837,9.81072 -13.40353,57.8264 12.31912,53.9617 13.80049,-2.07345 17.42549,-9.53604 22.07328,-17.75584 8.97634,-15.87495 14.77551,-63.81753 6.82832,-49.54903 -9.66624,17.35496 -4.21578,54.31872 15.40332,64.50742 7.25211,3.76615 17.23122,-3.05896 22.78063,-9.05735 11.89476,-12.85704 21.32539,-34.5344 15.56415,-50.18813 -4.98449,-13.5433 -4.93103,18.16911 -4.35814,22.51519 3.36285,25.51208 17.80806,44.01906 51.76357,40.94146" style="stroke-dasharray: 1239.45; stroke-dashoffset: 0;"></path>Sorry, your browser does not support inline SVG.
+						</svg>
+		  			</div>
 
-		  <div id="contenedor_svg" class="op_hidden">
-			  <svg id="mySVG" class="shadow">
-				  <path fill="none" stroke="#fff" stroke-width="7" id="triangle" d="m 116.11916,70.487647 c 0,0 -13.58737,-14.594331 -39.055038,-7.63625 -24.585366,6.717031 -37.841335,38.500033 -38.175445,63.073263 -0.345959,25.44415 14.789664,55.36435 37.738224,66.35928 15.501782,7.42707 37.273099,2.24556 50.907819,-8.22157 19.53055,-14.99324 25.1554,-18.22522 30.21856,-67.40173 3.8846,-37.729288 -21.21512,-55.862416 -22.23501,-4.83003 -0.98312,49.19201 5.24769,58.13224 23.5912,78.29243 7.18438,7.89588 17.34182,11.19324 29.6577,12.08575 19.80293,1.43506 33.40533,1.62382 41.09039,-39.54596 7.68504,-41.16979 -38.27378,-27.69766 -51.91986,-12.2066 -11.63024,13.20273 -14.49919,40.29807 8.36311,51.55908 19.23107,9.47242 33.6109,-6.10792 40.39648,-17.45858 11.49653,-19.23086 9.15997,-38.35324 9.15997,-38.35324 0,0 -0.67453,-1.87524 -5.94287,7.93543 -5.26837,9.81072 -13.40353,57.8264 12.31912,53.9617 13.80049,-2.07345 17.42549,-9.53604 22.07328,-17.75584 8.97634,-15.87495 14.77551,-63.81753 6.82832,-49.54903 -9.66624,17.35496 -4.21578,54.31872 15.40332,64.50742 7.25211,3.76615 17.23122,-3.05896 22.78063,-9.05735 11.89476,-12.85704 21.32539,-34.5344 15.56415,-50.18813 -4.98449,-13.5433 -4.93103,18.16911 -4.35814,22.51519 3.36285,25.51208 17.80806,44.01906 51.76357,40.94146" style="stroke-dasharray: 1239.45; stroke-dashoffset: 0;"></path>Sorry, your browser does not support inline SVG.
-			  </svg>
-		  </div>
+					<div class="botonConte ">
+						<button class="bgenerador" id="botonG">¿Iniciar?</button>
+					</div>
 
-		  <div class="botonConte ">
-			  <button class="bgenerador" id="botonG">¿Iniciar?</button>
-		  </div>
+					<div class="botonConte2">
+						<button class="bgenerador2" id="botonAdde" onClick="window.location.href='serotonina.html#contenedor_fondo'" >Swipe Up!</button>
+					</div>
 
-		  
+				</section>
+			</section>
 
-		  <div class="botonConte2">
-			  <button class="bgenerador2" id="botonAdde" onClick="window.location.href='serotonina.html##contenedor_fondo'" >Swipe Up!</button>
-		  </div>
-
-		  </section>
-	  </section>
-	</div>
-
-
-	    <div class="section op_hidden">
-
-
-		<div class="botonConte3 ">
-			<button class="bgenerador2" id="botonAdd">by ÁngelT - 2021</button>
 		</div>
 
 
+	    <div class="section op_hidden" id="contenedor_div3">
+			<div class="botonConte3 ">
+				<button class="bgenerador2" id="botonAdd">by ÁngelT - 2021</button>
+			</div>
 
-	    	<footer class="footer" id="contacto">
-      <div class="top animated fadeIn rt2sss">
-
-
-		<div class="my_texto_footer">
-	    	<p class="titulo_footer" style="color: white"><b>Bonus</b> </p>
-	    </div>
-
-
-
-
-        <div class="bloques-footer">
-
-            
-          <div class="iconos" style="padding-right: 0">
-              <!--  <h4 class="footer-contacto">Somos digitales, acércate...</h4>  -->
-              <div class="social-icons">
-
-                <a href="##" class="social-icon5" onclick="celular()"><i class="fa fa-gift" ></i></a>
+			<footer class="footer" id="contacto">
+				<div class="top animated fadeIn rt2sss">
 				
-				<script>
-				function celular() {
-				    var audio2 = document.getElementById("audio_06");
-					audio2.play();
+					<div class="my_texto_footer">
+						<p class="titulo_footer" style="color: white"><b>Bonus</b> </p>
+					</div>
+					<div class="bloques-footer">
+						<div class="iconos" style="padding-right: 0">
+							<div class="social-icons">
+								<a href="##" class="social-icon5" onclick="celular()"><i class="fa fa-gift" ></i></a>
+								<script>
+									function celular()
+									{
+										var audio2 = document.getElementById("audio_06");
+										audio2.play();
 
-				    var res2 = swal({
-						  title: ';)',
-						  width: 600,
-						  padding: '2em',
-						  background: '#ffffff00',
-						  backdrop: `
-						    rgba(0,0,123,0.4)
-						    url("./angel/nyan-cat.gif")
-						    center left
-						    no-repeat
-						  `,onClose: () => {
-							audio2.pause();						    }
-						});
-				    
-				}
-				</script>
-
-
-                </div> <!-- end .social-icons -->
-                <!-- <p class="footer-text">Desarrolla tu vida</p>  -->
-            </div> <!-- end .col-sm-4 -->
-
-        </div> <!-- end .container -->
-
-
-      </div> <!-- end .footer -->
-      <div class="bottom animated fadeIn rt2sss" >&copy; 2016 - 2021 &middot; mB <span class="hover_marca">Una marca de Ángel Tepetla</span></div> <!-- end .bottom -->
-    </footer> <!-- end .footer -->
-
-
-
+										var res2 = swal({
+											title: ';)',
+											width: 600,
+											padding: '2em',
+											background: '#ffffff00',
+											backdrop: `
+												rgba(0,0,123,0.4)
+												url("./angel/nyan-cat.gif")
+												center left
+												no-repeat`,
+												onClose: () => {
+													audio2.pause();
+												}
+										});
+									}
+								</script>
+                			</div>
+						</div>
+        			</div>
+				
+				</div>
+				
+				<div class="bottom animated fadeIn rt2sss">
+					<p>&copy; 2016 - 2021 &middot; mB <span class="hover_marca">Una marca de Ángel Tepetla</span></p>
+				</div>
+			</footer>
 
 	    </div>
-
 
 
 	</div>
-
 
 	<script type="text/javascript" src="./data/fullpage.js"></script>
 	<script src="./data/jquery.min.js"></script>
 	<script src="./data/jquery-ui.min.js"></script>
-
-
-
 
 	<script type='text/javascript'>
 

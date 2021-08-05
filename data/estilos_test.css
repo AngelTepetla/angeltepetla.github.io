@@ -527,13 +527,17 @@ h2
 }
 .op_hidden
 {
-	opacity: 0;
+	opacity: 0.9;
 }
 .op_hidden_last
 {
-	opacity: 0;
+	opacity: 0.9;
 }
 
+div#contenedor_div3
+{
+	background-color: #1c1c1c;
+}
 .proact
 {
 	font-size: 1em;
@@ -607,7 +611,7 @@ span.pro2
 
 button#botonAdde
 {
-	color: #cc2f7e;
+	/*color: #cc2f7e;*/
 	filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
 }
 
@@ -1273,6 +1277,7 @@ rojo flat dark c6002b
 	    color: #eeeeee;
 	    padding: 0 10px;
 	    font-size: 14px;
+		font-weight: 600;
 	    border: none;
 	    /* font-family: "Helvetica"; */
 	}

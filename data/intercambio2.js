@@ -6,6 +6,10 @@ $(document).ready(
 	document.getElementById("botonAdd").onclick = function() { adder(); };
 
 
+	div1 = document.getElementById("contenedor_principal");
+	div2 = document.getElementById("contenedor_div2");
+
+
 	var lockers = ['Jorge Alberto', 'José Manuel', 'Diana Margarita', 'Flor Ivón', 'José Armando', 'Javier', 'Edilberto', 'Gustavo', 'José Luis', 'Juan Carlos', 'Juan Pablo', 'Aarón', 'Donovan Totomoch', 'Bryan', 'Orlando Uriel', 'Andrés', 'José Mauricio', 'José Antonio', 'David Israel'];
 	//var lockers = ['A', 'B', 'C', 'D', 'E'];
 	var fijo = 'at', fijo2 = 'mmn';
@@ -22,7 +26,9 @@ $(document).ready(
 	var inicial = 'Cada palabra desbloquea algo más (hay tres secciones, swipe!)...\nEn computadora deberia ser más claro...';
 
 				var titulo = '¿Iniciar?';
-				var completar = '(1/7) Chocolate Sin:';
+				var completar = 'Chocolate Sin:';
+	var Placeholder = 'Completa la frase';
+	var titulo_pregunta = '1/7';
 
     var hiddenElement = document.createElement('a');
 
@@ -88,12 +94,13 @@ $(document).ready(
 			}
 
 			var {value: ipAddress} = await swal({
-			  title: 'Just...',
+			  title: titulo_pregunta,
 			  input: 'text',
 			  text: completar,
-			  inputPlaceholder: 'Completa la frase',
+			  inputPlaceholder: Placeholder,
 			  showCancelButton: false,
 			  confirmButtonColor: 'pink',
+			  type: 'info',
 			  confirmButtonText: 'Aceptar',
 			  inputValidator: (value) => {
 			  	if (!value)
@@ -150,8 +157,15 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++;
 				
-				completar = '(2/7) Estudiaste: B_______a';
+				completar = 'Estudiaste: B_______a';
 				inicial = 'Cada palabra desbloquea algo más (hay tres secciones abajo, swipe!)...\nEn computadora deberia ser más claro...';
+				titulo_pregunta = '2/7';
+
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else if(nombre.toLowerCase() == 'biotecnologia' || nombre.toLowerCase() == 'biotecnología'){
@@ -167,7 +181,14 @@ $(document).ready(
 
 				inicial = 'Cada palabra desbloquea algo más (hay tres secciones abajo, swipe!)...';
 
-				completar = '(3/7) C_w:';
+				completar = 'C_w:';
+				titulo_pregunta = '3/7';
+
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else if(nombre.toLowerCase() == 'caw'){
@@ -181,7 +202,14 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = '(4/7) Helado o nieve?:';
+				titulo_pregunta = '4/7';
+				completar = 'Helado o nieve?:';
+
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else if(nombre.toLowerCase() == 'nieve'){
@@ -195,7 +223,14 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = '(5/7) Me odias?:';
+				titulo_pregunta = '5/7';
+				completar = 'Me odias?:';
+
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else if(nombre.toLowerCase() == 'no' || nombre.toLowerCase() == 'si'){
@@ -209,7 +244,14 @@ $(document).ready(
 				x[km].style.opacity = "1";
 				km++; 
 
-				completar = '(6/7) Oj___s:';
+				titulo_pregunta = '6/7';
+				completar = 'Oj___s:';
+
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else if(nombre.toLowerCase() == 'ojitos'){
@@ -223,7 +265,14 @@ $(document).ready(
 				x[km-1].style.opacity = "1";
 				km++; 
 
-				completar = '(7/7) Cal_b_za:';
+				completar = 'Cal_b_za:';
+				titulo_pregunta = '7/7';
+
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else if(nombre.toLowerCase() == 'calabaza'){
@@ -234,12 +283,21 @@ $(document).ready(
 				var x = document.getElementsByClassName("op_hidden_last");
 				console.log(km);
 				
+				
 				x[0].style.opacity = "1";
 				km=0; 
 
 				titulo = 'Thank U';
+				titulo_pregunta = 'Bonus';
 				inicial = 'La siguiente palabra desbloquea todo, el orden en el que se ingresen realmente no importa...';
-				completar = '(Bonus) Pensaba que..., pero me pusieron la:';
+				completar = 'Pensaba que te habia olvidado, pero me pusieron la:';
+				Placeholder = 'Canción';
+
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else if(nombre.toLowerCase() == 'cancion' || nombre.toLowerCase() == 'canción'){
@@ -256,10 +314,21 @@ $(document).ready(
 				var x = document.getElementsByClassName("op_hidden_last");
 				x[0].style.opacity = "1";
 
+				div1.classList.remove("active");
+				div1.classList.remove("fp_completely");
+
+				div2.classList.add("active");
+				div2.classList.add("fp_completely");
+
 				titulo = 'Si llegaste hasta aqui, thank U...';
 				inicial = '...';
 				completar = '...';
 
+				swal({
+					type: 'success',
+					text: `Correcto!`,
+					confirmButtonColor: 'pink'
+				})
 
 			}
 			else{
@@ -268,6 +337,12 @@ $(document).ready(
 
 				var audio5 = document.getElementById("audio_04");
 				audio5.play();
+
+				swal({
+					type: 'error',
+					text: `Incorrecto!`,
+					confirmButtonColor: 'pink'
+				})
 			}
 
 

@@ -1,6 +1,14 @@
+/*
 new fullpage('#fullpage', {
   sectionsColor: ['#1d88dc'],
+  
 });
+*/
+new fullpage('#fullpage', {
+	sectionsColor: ['#1bbc9b', '#4BBFC3', '#1c1c1c']
+});
+
+
 
 var pathEls = document.querySelectorAll('path');
 for (var i = 0; i < pathEls.length; i++) {

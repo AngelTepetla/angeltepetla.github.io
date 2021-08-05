@@ -325,9 +325,11 @@ $(document).ready(
 				inicial = '...';
 				completar = '...';
 
+				document.getElementById("botonG").style.display = "none";
+
 				swal({
 					type: 'success',
-					text: `Correcto!`,
+					text: `Si llegaste hasta aqui, thank U...`,
 					confirmButtonColor: 'pink'
 				})
 
